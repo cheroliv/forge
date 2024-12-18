@@ -20,10 +20,11 @@ You can download JBake from the official website: https://jbake.org/download.htm
 2. Extract the downloaded ZIP file to a directory of your choice, e.g., `C:\JBake`.
 3. Add the `bin` directory to your system's PATH environment variable.
 4. Open a command prompt and verify the installation by running:
-[source,bash]
-----
-jbake -v
-----
+   +
+   [source,bash]
+   ----
+   jbake -v
+   ----
 
 ==== Mac
 
@@ -31,10 +32,11 @@ jbake -v
 2. Extract the downloaded ZIP file to a directory of your choice, e.g., `/Applications/JBake`.
 3. Add the `bin` directory to your system's PATH environment variable.
 4. Open a terminal and verify the installation by running:
-[source,bash]
-----
-jbake -v
-----
+   +
+   [source,bash]
+   ----
+   jbake -v
+   ----
 
 ==== Linux
 
@@ -42,28 +44,31 @@ jbake -v
 2. Extract the downloaded ZIP file to a directory of your choice, e.g., `/opt/jbake`.
 3. Add the `bin` directory to your system's PATH environment variable.
 4. Open a terminal and verify the installation by running:
-[source,bash]
-----
-jbake -v
-----
+   +
+   [source,bash]
+   ----
+   jbake -v
+   ----
 
 === Create a New JBake Project
 
 1. Open a command prompt (Windows) or terminal (Mac/Linux).
 2. Navigate to the directory where you want to create your JBake project.
 3. Run the following command to create a new JBake project:
-[source,bash]
-----
-jbake -i
-----
+   +
+   [source,bash]
+   ----
+   jbake -i
+   ----
 
 === Copy the Template Files
 
 1. Clone this repository or download the ZIP file and extract it.
 2. Copy the contents of the `templates` directory from this repository into the `templates` directory of your JBake project.
 3. The directory structure should look like this:
-[source,text]
-----
+   +
+   [source,text]
+   ----
    your-jbake-project/
    ├── jbake.properties
    ├── content/
@@ -75,26 +80,28 @@ jbake -i
        │   └── css/
        │       └── tailwind.css
        └── index.ftl
-----
+   ----
 
 === Configure JBake to Use the New Template
 
 1. Open the `jbake.properties` file in your JBake project.
 2. Set the `template.folder` property to `templates`.
-[source,properties]
-----
-template.folder=templates
-----
+   +
+   [source,properties]
+   ----
+   template.folder=templates
+   ----
 
 === Generate the Site
 
 1. Open a command prompt (Windows) or terminal (Mac/Linux).
 2. Navigate to the root directory of your JBake project.
 3. Run the following command to generate the site:
-[source,bash]
-----
-jbake
-----
+   +
+   [source,bash]
+   ----
+   jbake
+   ----
 
 == Usage
 
