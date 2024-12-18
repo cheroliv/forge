@@ -1,1 +1,93 @@
-= Forge project
+= JBake Template with Tailwind CSS
+
+This project provides a JBake template that uses Tailwind CSS instead of Bootstrap.
+
+== Installation
+
+To use this template, follow these steps:
+
+. Install JBake:
++
+You can download JBake from the official website: https://jbake.org/download.html
++
+Make sure you have Java installed.
+
+. Create a new JBake project:
++
+[source,bash]
+----
+jbake -i
+----
++
+This will create a new JBake project in the current directory.
+
+. Copy the template files:
++
+Copy the contents of this repository into the `templates` directory of your JBake project.
++
+The directory structure should look like this:
++
+[source,text]
+----
+your-jbake-project/
+├── jbake.properties
+├── content/
+├── output/
+└── templates/
+    ├── layouts/
+    │   └── default.ftl
+    ├── assets/
+    │   └── css/
+    │       └── tailwind.css
+    └── index.ftl
+----
+
+. Configure JBake to use the new template:
++
+Open the `jbake.properties` file in your JBake project.
++
+Set the `template.folder` property to `templates`.
++
+[source,properties]
+----
+template.folder=templates
+----
+
+. Generate the site:
++
+[source,bash]
+----
+jbake
+----
++
+This will generate the site using the new template.
+
+== Usage
+
+The template includes the following:
+
+*   Tailwind CSS for styling.
+*   A basic layout (`default.ftl`) that includes the necessary Tailwind CSS setup.
+*   An example `index.ftl` file to get you started.
+
+To customize the template:
+
+*   Modify the `default.ftl` file to change the overall layout.
+*   Add or modify the CSS in `assets/css/tailwind.css`.
+*   Create new content files in the `content` directory.
+
+== Customization
+
+You can customize the template by modifying the following files:
+
+*   `templates/layouts/default.ftl`: This file contains the main layout of the site.
+*   `templates/assets/css/tailwind.css`: This file contains the Tailwind CSS styles.
+*   `templates/index.ftl`: This is an example index page.
+
+== Contributing
+
+If you have any suggestions or improvements, feel free to submit a pull request.
+
+== License
+
+This project is licensed under the MIT License.

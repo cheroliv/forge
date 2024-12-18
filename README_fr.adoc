@@ -1,0 +1,93 @@
+= Modèle JBake avec Tailwind CSS
+
+Ce projet fournit un modèle JBake qui utilise Tailwind CSS au lieu de Bootstrap.
+
+== Installation
+
+Pour utiliser ce modèle, suivez ces étapes :
+
+. Installez JBake :
++
+Vous pouvez télécharger JBake depuis le site officiel : https://jbake.org/download.html
++
+Assurez-vous que Java est installé.
+
+. Créez un nouveau projet JBake :
++
+[source,bash]
+----
+jbake -i
+----
++
+Cela créera un nouveau projet JBake dans le répertoire courant.
+
+. Copiez les fichiers du modèle :
++
+Copiez le contenu de ce dépôt dans le répertoire `templates` de votre projet JBake.
++
+La structure du répertoire devrait ressembler à ceci :
++
+[source,text]
+----
+votre-projet-jbake/
+├── jbake.properties
+├── content/
+├── output/
+└── templates/
+    ├── layouts/
+    │   └── default.ftl
+    ├── assets/
+    │   └── css/
+    │       └── tailwind.css
+    └── index.ftl
+----
+
+. Configurez JBake pour utiliser le nouveau modèle :
++
+Ouvrez le fichier `jbake.properties` dans votre projet JBake.
++
+Définissez la propriété `template.folder` sur `templates`.
++
+[source,properties]
+----
+template.folder=templates
+----
+
+. Générez le site :
++
+[source,bash]
+----
+jbake
+----
++
+Cela générera le site en utilisant le nouveau modèle.
+
+== Utilisation
+
+Le modèle inclut les éléments suivants :
+
+*   Tailwind CSS pour le style.
+*   Une mise en page de base (`default.ftl`) qui inclut la configuration nécessaire pour Tailwind CSS.
+*   Un exemple de fichier `index.ftl` pour vous aider à démarrer.
+
+Pour personnaliser le modèle :
+
+*   Modifiez le fichier `default.ftl` pour changer la mise en page générale.
+*   Ajoutez ou modifiez le CSS dans `assets/css/tailwind.css`.
+*   Créez de nouveaux fichiers de contenu dans le répertoire `content`.
+
+== Personnalisation
+
+Vous pouvez personnaliser le modèle en modifiant les fichiers suivants :
+
+*   `templates/layouts/default.ftl` : Ce fichier contient la mise en page principale du site.
+*   `templates/assets/css/tailwind.css` : Ce fichier contient les styles Tailwind CSS.
+*   `templates/index.ftl` : Ceci est un exemple de page d'index.
+
+== Contribution
+
+Si vous avez des suggestions ou des améliorations, n'hésitez pas à soumettre une pull request.
+
+== Licence
+
+Ce projet est sous licence MIT.
