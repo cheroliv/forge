@@ -6,61 +6,102 @@ Ce projet fournit un modèle JBake qui utilise Tailwind CSS au lieu de Bootstrap
 
 Pour utiliser ce modèle, suivez ces étapes :
 
-. Installez JBake :
-+
+=== Installer Java
+
+JBake nécessite que Java soit installé sur votre système. Vous pouvez télécharger la dernière version de Java depuis le site officiel : https://www.oracle.com/java/technologies/javase-jdk11-downloads.html
+
+=== Installer JBake
+
 Vous pouvez télécharger JBake depuis le site officiel : https://jbake.org/download.html
-+
-Assurez-vous que Java est installé.
 
-. Créez un nouveau projet JBake :
-+
-[source,bash]
-----
-jbake -i
-----
-+
-Cela créera un nouveau projet JBake dans le répertoire courant.
+==== Windows
 
-. Copiez les fichiers du modèle :
-+
-Copiez le contenu de ce dépôt dans le répertoire `templates` de votre projet JBake.
-+
-La structure du répertoire devrait ressembler à ceci :
-+
-[source,text]
-----
-votre-projet-jbake/
-├── jbake.properties
-├── content/
-├── output/
-└── templates/
-    ├── layouts/
-    │   └── default.ftl
-    ├── assets/
-    │   └── css/
-    │       └── tailwind.css
-    └── index.ftl
-----
+1. Téléchargez la dernière version de JBake depuis le site officiel.
+2. Extrayez le fichier ZIP téléchargé dans un répertoire de votre choix, par exemple `C:\JBake`.
+3. Ajoutez le répertoire `bin` à votre variable d'environnement PATH du système.
+4. Ouvrez une invite de commandes et vérifiez l'installation en exécutant :
+   +
+   [source,bash]
+   ----
+   jbake -v
+   ----
 
-. Configurez JBake pour utiliser le nouveau modèle :
-+
-Ouvrez le fichier `jbake.properties` dans votre projet JBake.
-+
-Définissez la propriété `template.folder` sur `templates`.
-+
-[source,properties]
-----
-template.folder=templates
-----
+==== Mac
 
-. Générez le site :
-+
-[source,bash]
-----
-jbake
-----
-+
-Cela générera le site en utilisant le nouveau modèle.
+1. Téléchargez la dernière version de JBake depuis le site officiel.
+2. Extrayez le fichier ZIP téléchargé dans un répertoire de votre choix, par exemple `/Applications/JBake`.
+3. Ajoutez le répertoire `bin` à votre variable d'environnement PATH du système.
+4. Ouvrez un terminal et vérifiez l'installation en exécutant :
+   +
+   [source,bash]
+   ----
+   jbake -v
+   ----
+
+==== Linux
+
+1. Téléchargez la dernière version de JBake depuis le site officiel.
+2. Extrayez le fichier ZIP téléchargé dans un répertoire de votre choix, par exemple `/opt/jbake`.
+3. Ajoutez le répertoire `bin` à votre variable d'environnement PATH du système.
+4. Ouvrez un terminal et vérifiez l'installation en exécutant :
+   +
+   [source,bash]
+   ----
+   jbake -v
+   ----
+
+=== Créer un Nouveau Projet JBake
+
+1. Ouvrez une invite de commandes (Windows) ou un terminal (Mac/Linux).
+2. Naviguez vers le répertoire où vous souhaitez créer votre projet JBake.
+3. Exécutez la commande suivante pour créer un nouveau projet JBake :
+   +
+   [source,bash]
+   ----
+   jbake -i
+   ----
+
+=== Copier les Fichiers du Modèle
+
+1. Clonez ce dépôt ou téléchargez le fichier ZIP et extrayez-le.
+2. Copiez le contenu du répertoire `templates` de ce dépôt dans le répertoire `templates` de votre projet JBake.
+3. La structure du répertoire devrait ressembler à ceci :
+   +
+   [source,text]
+   ----
+   votre-projet-jbake/
+   ├── jbake.properties
+   ├── content/
+   ├── output/
+   └── templates/
+       ├── layouts/
+       │   └── default.ftl
+       ├── assets/
+       │   └── css/
+       │       └── tailwind.css
+       └── index.ftl
+   ----
+
+=== Configurer JBake pour Utiliser le Nouveau Modèle
+
+1. Ouvrez le fichier `jbake.properties` dans votre projet JBake.
+2. Définissez la propriété `template.folder` sur `templates`.
+   +
+   [source,properties]
+   ----
+   template.folder=templates
+   ----
+
+=== Générer le Site
+
+1. Ouvrez une invite de commandes (Windows) ou un terminal (Mac/Linux).
+2. Naviguez vers le répertoire racine de votre projet JBake.
+3. Exécutez la commande suivante pour générer le site :
+   +
+   [source,bash]
+   ----
+   jbake
+   ----
 
 == Utilisation
 
