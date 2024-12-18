@@ -55,20 +55,19 @@ Vous pouvez télécharger JBake depuis le site officiel : https://jbake.org/down
 1. Ouvrez une invite de commandes (Windows) ou un terminal (Mac/Linux).
 2. Naviguez vers le répertoire où vous souhaitez créer votre projet JBake.
 3. Exécutez la commande suivante pour créer un nouveau projet JBake :
-   +
-   [source,bash]
-   ----
-   jbake -i
-   ----
+
+[source,bash]
+----
+jbake -i
+----
 
 === Copier les Fichiers du Modèle
 
 1. Clonez ce dépôt ou téléchargez le fichier ZIP et extrayez-le.
 2. Copiez le contenu du répertoire `templates` de ce dépôt dans le répertoire `templates` de votre projet JBake.
 3. La structure du répertoire devrait ressembler à ceci :
-   +
-   [source,text]
-   ----
+[source,text]
+----
    votre-projet-jbake/
    ├── jbake.properties
    ├── content/
@@ -80,28 +79,27 @@ Vous pouvez télécharger JBake depuis le site officiel : https://jbake.org/down
        │   └── css/
        │       └── tailwind.css
        └── index.ftl
-   ----
+----
 
 === Configurer JBake pour Utiliser le Nouveau Modèle
 
 1. Ouvrez le fichier `jbake.properties` dans votre projet JBake.
 2. Définissez la propriété `template.folder` sur `templates`.
-   +
-   [source,properties]
-   ----
-   template.folder=templates
-   ----
+
+[source,properties]
+----
+template.folder=templates
+----
 
 === Générer le Site
 
 1. Ouvrez une invite de commandes (Windows) ou un terminal (Mac/Linux).
 2. Naviguez vers le répertoire racine de votre projet JBake.
 3. Exécutez la commande suivante pour générer le site :
-   +
-   [source,bash]
-   ----
-   jbake
-   ----
+[source,bash]
+----
+jbake
+----
 
 == Utilisation
 
